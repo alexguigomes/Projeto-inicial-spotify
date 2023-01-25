@@ -1,0 +1,158 @@
+/* -- altura -- */
+html, body .capa{
+    height: 100%;
+}
+
+/* -- background da pagina, com imagem fixada, edição de fundo, com cor e degrade, e formatação de texto da pagina*/
+body { 
+ background: url('imagens/capa.png'), 
+             url('imagens/ruido.png'), 
+             linear-gradient(50deg, #ff4169, #7c26f8);
+ background-attachment: fixed;
+ font-family: Helvetica, arial, sans-serif;
+
+ /* -- remoção da barra de rolaghem horizontal -- */
+ overflow-x: hidden;
+ 
+}
+
+/* -- BARRA DE NAVEGAÇÃO -- */
+.img-logo{
+    height:40px;
+    width:132px;
+    display: block;
+    background:url(imagens/spotify.svg) no-repeat;
+    background-size: contain ; 
+    color: transparent;
+}
+
+/* -- tamanho e cor da navbar(barra de navegação) -- */
+nav.navbar-transparente {
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+
+}
+
+
+/* -- sentralização da logo spotify -- */
+.navbar-brand{
+    padding: 5px;
+
+}
+
+/* --deivisor entre baixar e escrever-se -- */
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 16px 10px; 
+}
+
+/* -- alterar cor das palavras assim que o cursor estiver em cima -- */
+.navbar-inverse .navbar-nav>li>a {
+    color:white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color:#9bf0e1;
+}
+
+/* -- imagem de capa da pagina -- */
+.capa {
+    display: table;
+    width: 100%; 
+}
+.texto-capa {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* -- botoes mudar de cor ao passar cursor e cima -- */
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px ;
+    padding: 10px 35px;
+    margin: 0px 15px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0,5s;
+}
+
+.btn-roxo{
+    background: #7c25f8;
+
+}
+
+.btn-roxo:hover {
+    background: #6207e3;
+    color: white;
+
+}
+
+.btn-branco {
+    border: 2px solid white;
+    
+}
+.btn-branco:hover {
+    background-color: white;
+    color: black;
+    
+}
+/* -- seção de servicos -- */
+#servicos {
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.albuns{
+    padding: 10px 0px 10px 0px;
+}
+/* -- recursos -- */
+#recursos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+/* -- edição no angulo das imagens dos iphones -- */
+.rotacionar{
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+/* -- formatação de texto da pagina -- */
+
+h1 {
+    font-size: 100px;
+    font-weight:800;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    }
+
+h2{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+/* -- formatação da cor do texto da area serviços -- */
+#servicos h2, #servicos h3 {
+    color: #7c25f8
+}
+/* -- formatação da cor do texto buscar, navegar e descobrir -- */
+#recursos h3 {
+    color: #9bf0e1
+}
+
+
